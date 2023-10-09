@@ -22,4 +22,4 @@ For example, to evaluate ex02 of c00:
 ```cd ex02```  
 ```../test.sh```
 
-That's it. If you want to evaluate ex03, ex04 or even ex114514, just do the same thing~
+That's it. If you want to evaluate ex03, ex42 or even ex114514, just do the same thing~
