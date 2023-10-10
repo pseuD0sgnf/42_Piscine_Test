@@ -17,10 +17,12 @@ int	main(void)
 {
 	int	c;
 
+	printf("Please enter a character: ");
 	c = getchar();
 	if (c != EOF)
 	{
 		ft_putchar(c);
 	}
+	printf("\n");
 	return (0);
 }

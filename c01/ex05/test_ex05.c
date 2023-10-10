@@ -19,7 +19,9 @@ int	main(void)
 {
 	char	string[12];
 
-	strcpy(string, "Hello World!");
+	strcpy(string, "Kapibara san!");
+	printf("The original string is 'Kapibara san!'. The ft_putstr is:\n");
 	ft_putstr(&string[0]);
+	printf("\n");
 }
 
