@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex04.c                                        :+:      :+:    :+:   */
+/*   test_ex06.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 12:46:09 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 12:13:28 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/09 13:18:20 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/09 13:18:36 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
-#include "ft_is_negative.c"
+#include <string.h>
+
+int	ft_strlen(char *str);
 
 int	main(void)
 {
-	ft_is_negative(100);
-	ft_is_negative(0);
-	ft_is_negative(-10);
-	printf(" are the Result of 100, 0 and -10\n");
+	char	string[12];
+	int	len;
+
+	strcpy(string, "Hello World!");
+	len = ft_strlen(&string[0]);
+	printf("True length is 12. Test length is %d\n", len);
 }

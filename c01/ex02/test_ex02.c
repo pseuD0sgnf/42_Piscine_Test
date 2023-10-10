@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex04.c                                        :+:      :+:    :+:   */
+/*   test_ex02.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 12:46:09 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 12:13:28 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/09 12:44:26 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/09 12:44:35 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
-#include "ft_is_negative.c"
+
+void	ft_swap(int *a, int *b);
 
 int	main(void)
 {
-	ft_is_negative(100);
-	ft_is_negative(0);
-	ft_is_negative(-10);
-	printf(" are the Result of 100, 0 and -10\n");
+	int	x;
+	int	y;
+
+	x = 1;
+	y = 42;
+	printf("origin - a:%d, b:%d\n", x, y);
+	ft_swap(&x, &y);
+	printf("after - a:%d, b:%d\n", x, y);
+	return (0);
 }
+

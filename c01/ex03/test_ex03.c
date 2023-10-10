@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex04.c                                        :+:      :+:    :+:   */
+/*   test_ex03.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 12:46:09 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 12:13:28 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/09 12:56:37 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/09 12:56:39 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "ft_is_negative.c"
 
-int	main(void)
+#include <stdio.h>
+
+void	ft_div_mod(int a, int b, int *div, int *mod);
+
+int	main()
 {
-	ft_is_negative(100);
-	ft_is_negative(0);
-	ft_is_negative(-10);
-	printf(" are the Result of 100, 0 and -10\n");
+	int	a = 18;
+	int	b = 5;
+	int	div;
+	int	mod;
+
+	ft_div_mod(a, b, &div, &mod);
+	printf("a is %d, b is %d, div is %d, mod is %d\n", a, b, div, mod);
+
 }

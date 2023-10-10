@@ -5,17 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 12:46:09 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 12:13:28 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/09 13:02:42 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/09 13:02:43 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "ft_is_negative.c"
 
-int	main(void)
+#include <stdio.h>
+
+void	ft_ultimate_div_mod(int *a, int *b);
+
+int	main()
 {
-	ft_is_negative(100);
-	ft_is_negative(0);
-	ft_is_negative(-10);
-	printf(" are the Result of 100, 0 and -10\n");
+	int	a = 20;
+	int	b = 3;
+
+	printf("a is %d, b is %d\n",  a, b);
+	ft_ultimate_div_mod(&a, &b);
+	printf("div is %d, mod is %d\n", a, b);
+
 }
