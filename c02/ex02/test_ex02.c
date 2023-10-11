@@ -19,9 +19,11 @@ int	main(void)
     char	str1[] = "Kapibara";
     char	str2[] = "Kapi1piki";
     char	str3[] = "";
+    char	str4[] = "Kap\ni1piki";
 
     printf("Testing is alpha: %d\n", ft_str_is_alpha(str1));
     printf("Testing is not only alpha: %d\n", ft_str_is_alpha(str2));
     printf("Testing is empty: %d\n", ft_str_is_alpha(str3));
+    printf("Testing is not only printable: %d\n", ft_str_is_alpha(str4));
     return (0);
 }

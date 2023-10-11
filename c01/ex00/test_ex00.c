@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex08.c                                        :+:      :+:    :+:   */
+/*   test_ex00.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 10:41:16 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 10:41:19 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/10 12:22:47 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/10 12:22:48 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strlowcase(char *str);
+void	ft_ft(int *nbr);
 
-int	main(void) {
-	char	str[] = "KAPIBara1PIKI";
-	char	*upcase = ft_strlowcase(str);
+int	main(void)
+{
+	int	number = 9;
+	int	*nbr = &number;
 
-	printf("Testing KAPIBara1PIKI: %s\n", upcase);
+	printf("origin:%d\n", *nbr);
+	ft_ft (nbr);
+	printf("after_ft:%d\n", number);
 	return (0);
 }

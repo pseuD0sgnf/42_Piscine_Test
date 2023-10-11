@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex08.c                                        :+:      :+:    :+:   */
+/*   test_ex07.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 10:41:16 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 10:41:19 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/11 13:46:17 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/11 13:50:58 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strlowcase(char *str);
+void	ft_rev_int_tab(int *tab, int size);
 
-int	main(void) {
-	char	str[] = "KAPIBara1PIKI";
-	char	*upcase = ft_strlowcase(str);
+int	main(void)
+{
+//	int	c;
 
-	printf("Testing KAPIBara1PIKI: %s\n", upcase);
+//	printf("Please enter a string: ");
+//	scanf("%d", &c);
+//	ft_rev_int_tab(&c, size);
+//	printf("After reverse: %d\n", c);
+		
+	int	c[] = {5, 6, 7, 8, 9, 0};
+	int	size = sizeof(c) / sizeof(c[0]);
+	
+	ft_rev_int_tab(c, size);
+	printf("Testing '5 6 7 8 9 0': ");
+	for (int i = 0; i < size; i++)
+	{
+		printf("%d ", c[i]);
+	}
 	return (0);
 }
