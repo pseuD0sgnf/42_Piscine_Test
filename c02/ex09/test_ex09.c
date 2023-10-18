@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   test_ex09.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 10:37:18 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 10:37:21 by yuxchen          ###   ########.fr       */
+/*   Created: 2023/10/11 13:24:09 by yuxchen           #+#    #+#             */
+/*   Updated: 2023/10/11 13:28:14 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str);
+char	*ft_strcapitalize(char *str);
 
 int	main(void)
 {
-    char	str1[] = "Kapibara";
-    char	str2[] = "Kapi1piki";
-    char	str3[] = "";
-
-    printf("Testing is alpha: %d\n", ft_str_is_alpha(str1));
-    printf("Testing is not only alpha: %d\n", ft_str_is_alpha(str2));
-    printf("Testing is empty: %d\n", ft_str_is_alpha(str3));
-    return (0);
+//	char str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char str[] = "salut, comm!!ent tu vas ? 42mots quarante-deux; cinquante+et+un";
+    	ft_strcapitalize(str);
+    	printf("%s\n", str);
+	return (0);
 }

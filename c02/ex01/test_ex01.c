@@ -6,7 +6,7 @@
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:26:25 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/09 16:33:12 by yuxchen          ###   ########.fr       */
+/*   Updated: 2023/10/17 13:37:37 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	main(void)
 	unsigned int	length;
 
 	origin = "Kapibara san!";
+	copy[17] = '3';
+	printf("copy[17]: %c\n", copy[17]);
 	length = strlen(origin) + 1;
 	printf("src is %s\n", origin);
 	ft_strncpy(copy, origin, length);
@@ -35,5 +37,6 @@ int	main(void)
 	memset(copy, 0, length);
 	ft_strncpy(copy, origin, 20);
 	printf("When length is more, ft_strncpy is %s\n", copy);
+	printf("copy[17]: %c\n", copy[17]);
 	return (0);
 }

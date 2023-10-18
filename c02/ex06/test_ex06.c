@@ -6,7 +6,7 @@
 /*   By: yuxchen <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:41:16 by yuxchen           #+#    #+#             */
-/*   Updated: 2023/10/10 10:41:19 by yuxchen          ###   ########.fr       */
+/*   Updated: 2023/10/17 14:11:23 by yuxchen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_str_is_printable(char *str);
 
 int	main(void) {
-    char	str1[] = "KAPIBARA";
+    char	str1[] = "KAPIBA RA~";
     char	str2[] = "K\na\rp\bi\tb\va\0r\aa";
     char	str3[] = "";
 
