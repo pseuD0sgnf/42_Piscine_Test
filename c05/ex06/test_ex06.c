@@ -31,5 +31,7 @@ int	main(void)
 	}
 	printf("first 50 number, %d prime\n", count);
 	
+	printf("is_prime(%d) = %d. should be 1\n", 2147483647, ft_is_prime(2147483647));
+	
 	return (0);
 }
