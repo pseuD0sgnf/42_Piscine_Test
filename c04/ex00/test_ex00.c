@@ -18,7 +18,7 @@ int ft_strlen(char *str);
 int	main(void)
 {
 	char str[] = "Kapibara";
-	printf("c: %lu\n", strlen(str));
-	printf("ft: %d\n", ft_strlen(str));
+	printf("Kapibara length c: %lu\n", strlen(str));
+	printf("Kapibara length ft: %d\n", ft_strlen(str));
 	return (0);
 }
